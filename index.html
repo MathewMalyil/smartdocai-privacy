@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SmartDocAI — Privacy & Data Deletion Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    :root { --fg:#111; --bg:#fff; --muted:#666; --card:#f7f7f9; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg:#eee; --bg:#0f1115; --muted:#9aa0a6; --card:#151822; }
+    }
+    html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+    .wrap { max-width: 860px; margin: 24px auto 80px; padding: 0 18px; }
+    h1,h2,h3 { line-height:1.25; margin: 1.2em 0 .4em; }
+    h1 { font-size: 1.85rem; }
+    h2 { font-size: 1.35rem; }
+    h3 { font-size: 1.05rem; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; }
+    p,li { font-size: 1rem; }
+    code,pre { background: var(--card); padding: .1rem .25rem; border-radius: 6px; }
+    .card { background: var(--card); border-radius: 14px; padding: 16px 18px; }
+    .meta { color: var(--muted); margin-top: .25rem; }
+    a { color: inherit; text-decoration: underline; }
+    .hr { height:1px; background: rgba(127,127,127,.25); margin: 24px 0; border:0; }
+    .grid { display:grid; gap:14px; }
+    .pill { display:inline-block; background: var(--card); padding: 4px 10px; border-radius: 999px; font-size:.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>SmartDocAI — Privacy Policy & Data Deletion</h1>
+    <p class="meta">Effective date: <strong>August 29, 2025</strong></p>
+    <p>SmartDocAI (“the App”) is developed by <strong>Mathew Malyil</strong> (“we”, “us”). This page explains what we collect, how we use it, and how you can request deletion.</p>
+
+    <div class="grid">
+      <div class="card"><span class="pill">Summary</span>
+        <ul>
+          <li><strong>You control your files.</strong> Documents and OCR images stay on your device unless you share/export them.</li>
+          <li><strong>AI requests are sent over HTTPS</strong> to our backend only to generate the response you asked for.</li>
+          <li><strong>No selling of data.</strong> We do not share with advertisers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="hr">
+
+    <h2 id="information-we-collect">Information We Collect</h2>
+    <ul>
+      <li><strong>User-provided documents & images:</strong> files you open (DOCX, XLSX, PPTX, PDF) or images you scan/pick for OCR.</li>
+      <li><strong>Basic app data (on device):</strong> preferences and usage counters stored in Android <code>SharedPreferences</code>.</li>
+      <li><strong>Network data:</strong> when you request AI analysis, text you submit is transmitted securely to our API solely to return a result. Standard server logs may include IP address, timestamp, and user-agent for reliability and abuse prevention.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect contacts, precise location, financial, or health data. We do <strong>not</strong> sell personal data.</p>
+
+    <h2 id="how-we-use-data">How We Use Data</h2>
+    <ul>
+      <li>Process and analyze your documents with AI (summaries, OCR, Q&A).</li>
+      <li>Operate, secure, and improve the App (diagnostics, rate limiting, abuse prevention).</li>
+    </ul>
+
+    <h2 id="where-processing-happens">Where Processing Happens</h2>
+    <ul>
+      <li><strong>On-device:</strong> file selection, display, optional local saves/exports.</li>
+      <li><strong>Server:</strong> requests are sent over HTTPS to our API (e.g., <code>smartdoc-ai-backend.vercel.app</code>) strictly to fulfill your query.</li>
+    </ul>
+
+    <h2 id="third-parties">Third-Party Processors</h2>
+    <p>To return AI results, we may relay the text you submit to:</p>
+    <ul>
+      <li><strong>OpenAI</strong> (e.g., GPT-4o)</li>
+      <li><strong>Groq</strong> (e.g., LLaMA models)</li>
+    </ul>
+    <p>They process the data only to provide the response you requested. We do <strong>not</strong> share data with advertisers or unrelated third parties.</p>
+
+    <h2 id="storage-retention">Storage & Retention</h2>
+    <ul>
+      <li><strong>Your documents stay on your device</strong> unless you choose to share/export.</li>
+      <li>Server-side: we do not permanently store your documents. Transient processing and short-lived logs may exist to operate the service and protect against abuse; non-essential logs are rotated on a rolling basis.</li>
+    </ul>
+
+    <h2 id="security">Security</h2>
+    <p>We use HTTPS for data in transit and follow platform best practices. No method is 100% secure; please avoid uploading highly sensitive data.</p>
+
+    <h2 id="children">Children</h2>
+    <p>The App is not directed to children under 13.</p>
+
+    <hr class="hr">
+
+    <h2 id="your-choices">Your Choices</h2>
+    <ul>
+      <li><strong>Clear local data:</strong> in the App, go to <em>Settings → Clear Data</em> to remove locally stored content and preferences.</li>
+      <li><strong>Uninstall:</strong> removing the App deletes its local data.</li>
+      <li><strong>Export/share:</strong> you decide if/when to export or share any content.</li>
+    </ul>
+
+    <h2 id="data-deletion">Data Deletion (Server-Side)</h2>
+    <p>We do not permanently store your documents on our servers. Temporary processing and short-lived logs may exist. You may request deletion of server-side identifiers/logs reasonably associated with your usage:</p>
+    <ol>
+      <li>Email <strong>malyilmathew@gmail.com</strong> with subject: <em>“Delete my data — SmartDocAI”</em>.</li>
+      <li>Include your country/region, device model, and approximate dates/times of use.</li>
+      <li>We will acknowledge within <strong>7 days</strong> and complete deletion within <strong>30 days</strong>, unless retention is required by law.</li>
+    </ol>
+
+    <h2 id="changes">Changes to This Policy</h2>
+    <p>We may update this page as our practices evolve. Changes will be posted here with a new effective date.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p><strong>Mathew Malyil</strong><br>
+       Email: <a href="mailto:malyilmathew@gmail.com">malyilmathew@gmail.com</a></p>
+
+    <p class="meta">Last updated: August 29, 2025</p>
+  </main>
+</body>
+</html>
